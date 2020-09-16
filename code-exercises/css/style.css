@@ -3,14 +3,12 @@ background-color: BurlyWood;
 
 }
 
-
 button {
   border: none;
   color: white;
   background-color: #DEB887;
   padding:1em 2em 1em 2em;
 }
-
 
 .padding-hover:hover {
     background-color: green;
@@ -32,7 +30,6 @@ button {
     }
 }
 
-
 h1 {
   color: #fff;
   font-size:52px;
@@ -49,6 +46,7 @@ h1 {
     margin:0 auto;
     width:50%;
   }
+
   .layout {
 
       background-image: url(https://github.com/janiceyoo/gra-321/blob/master/code-exercises/img/CNM.png);
