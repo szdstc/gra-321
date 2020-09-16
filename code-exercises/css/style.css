@@ -1,12 +1,67 @@
-    body {
-        background-color: inherit;
+body{
+background-color: BurlyWood;
+
 }
+
+
+button {
+  border: none;
+  color: white;
+  background-color: #DEB887;
+  padding:1em 2em 1em 2em;
+}
+
+
+.padding-hover:hover {
+    background-color: green;
+    color:white;
+    text-decoration: underline;
+}
+
+/---Media Queries---/
+@media screen and (max-width: 1000px) {
+    body {
+
+        background-color: LightSalmon;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        background-color: MediumSeaGreen;
+    }
+}
+
 
 h1 {
-  font-family: Franklin Gothic;
-  color: #000000;
-  font-size: 52px;
-  position:relative;
-  text-aligm: center
+  color: #fff;
+  font-size:52px;
+  position: relative;
+  text-align: center;
 
 }
+.container {
+
+    background-image: url(https://github.com/Zhendong Song/gra-321/blob/master/code-exercises/img/pic_0084.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 700px;
+    margin:0 auto;
+    width:50%;
+  }
+  .layout {
+
+      background-image: url(https://github.com/janiceyoo/gra-321/blob/master/code-exercises/img/CNM.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 700px;
+      margin:0 auto;
+      width:50%;
+    }
+
+    h2 {font-family: Franklin Gothic;
+        color:#fff;
+        font-size:52px;
+        position: relative;
+        text-align: center;
+    }
