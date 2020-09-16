@@ -1,7 +1,12 @@
-* {
-
+    body {
+        background-color: inherit;
 }
 
 h1 {
+  font-family: Franklin Gothic;
+  color: #000000;
+  font-size: 52px;
+  position:relative;
+  text-aligm: center
 
 }
