@@ -1,3 +1,7 @@
+
+
+
+
 body {
   padding-left: 76px;
   padding-right: 49px;
@@ -18,7 +22,7 @@ h1 {
 }
 
 h2 {
-  font-family: 'Lora', serif;
+  font-family: 'Noto Sans', sans-serif;
   font-weight: normal;
   font-size: 35px;
   color: #000;
@@ -31,7 +35,7 @@ h2 {
 }
 
 p {
-  font-family: 'Lora', serif;
+   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   font-size: 24px;
   color: #000;
@@ -53,7 +57,10 @@ p {
 
 div.joviimage {
   content: url(../img/bon-jovi.png);
+  width:817px;
+  height:755px;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 
@@ -69,9 +76,15 @@ div.joviimage {
 
 div.pattyimage {
   background-image: url(../img/patricia-urquiola.png);
+  width:780px;
+  height:1045px;
   background-repeat: no-repeat;
   position: relative;
 }
+
+
+
+
 
 .pattytext {
   font-family: 'Lora', serif;
@@ -86,6 +99,32 @@ div.pattyimage {
   position: absolute;
 }
 
+.container {
+
+background-image: url(../img/pic_0084.jpg);
+  background-size: cover;
+  height:817px;
+  margin: 0 auto;
+  width:600px;
+
+}
+
+
+ .desktop{
+  background-image: url(../img/desktop1.png);
+
+  width:1440px;
+  height:1972px;
+  background-repeat: no-repeat;
+}
+.desktop2{
+ background-image: url(../img/desktop2.png);
+
+ width:320px;
+ height:1753px;
+ background-repeat: no-repeat;
+}
+
 
 
 
@@ -95,21 +134,19 @@ div.pattyimage {
 
 
 /*---Default Styling ---*/
-body { 
-  background-color: white;
-}  
+body {
+  background-color:white;
+}
 
 
-@media screen and (max-width: 1000px) { 
-  body { 
+@media screen and (max-width: 1000px) {
+  body {
     background-color: white;
 }
 }
 
-@media screen and (max-width: 500px) { 
-  body { 
+@media screen and (max-width: 500px) {
+  body {
     background-color: white;
 }
 }
-
-  
