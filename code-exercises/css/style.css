@@ -58,15 +58,15 @@ p {
 div.joviimage {
   content: url(../img/bon-jovi.png);
   width:817px;
-  height:755px;
+  height:720px;
   background-repeat: no-repeat;
   position: relative;
 }
 
 
 .bottom {
-  width: 1315px;
-  height: 1005px;
+  width: 1305px;
+  height: 1015px;
   display: grid;
   grid-template-columns: 750px 522px;
   grid-column-gap: 42px;
@@ -76,8 +76,8 @@ div.joviimage {
 
 div.pattyimage {
   background-image: url(../img/patricia-urquiola.png);
-  width:780px;
-  height:1045px;
+  width:762px;
+  height:1022px;
   background-repeat: no-repeat;
   position: relative;
 }
