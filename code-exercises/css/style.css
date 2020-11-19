@@ -78,7 +78,7 @@ div.pattyimage {
   background-image: url(../img/patricia-urquiola.png);
   width:762px;
   height:1022px;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   position: relative;
 }
 
