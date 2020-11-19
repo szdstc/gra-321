@@ -1,7 +1,44 @@
-* {
-
+.redbox {
+  background-color: red;
+  width: 90%;
+  border: 15px solid green;
+  padding: 100px;
+  margin: 0 auto;
 }
 
-h1 {
 
+.box1 {
+  float: left;
+  background-color: red;
+  width: 20%;
+  height:200px;
+  border: 15px solid green;
+  margin: 50px;
+}
+
+.box2 {
+  float: left;
+  background-color: red;
+  width: 20%;
+  border: 15px solid green;
+  padding: 50px;
+  margin-right: 20px;
+}
+
+.box3 {
+  float: left;
+  background-color: red;
+  width: 20%;
+  border: 15px solid green;
+  padding: 50px;
+  margin-left: 10px;
+}
+
+.redbox2 {
+  background-color: red;
+  width: 90%;
+  border: 15px solid green;
+  padding: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
 }
