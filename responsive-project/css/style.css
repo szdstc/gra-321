@@ -1,44 +1,556 @@
-.redbox {
-  background-color: red;
-  width: 90%;
-  border: 15px solid green;
-  padding: 100px;
+
+
+
+
+/* Menu */
+
+
+h1 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-size: 25px;
+	color: #707070;
+	margin-left: 13px;
+}
+
+
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 25px;
+	color: #707070;
+	margin-left: 13px;
+	margin-bottom: 0;
+}
+
+
+/* Tea Collapsible Menu Buttons */
+
+
+
+input:checked +.tea-lbl-toggle {
+  background-size: 100%;
+  background-color: #707070;
+  background-position: 0 -180px;
+  background-repeat: no-repeat;
+  background-image: url(../img/TEA.jpg);
+  color: #707070;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.tea-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/TEA.jpg);
+  background-size: 100%;
+  background-position: 0 -180px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+
+.tea-lbl-toggle:hover, .coffee-lbl-toggle:hover, .specials-lbl-toggle:hover,
+.sandwiches-lbl-toggle:hover, .muffins-lbl-toggle:hover, .premade-lbl-toggle:hover {
+  color: #707070;
+}
+
+.collapsible-content {
+  max-height: 0px;
+  overflow: hidden;
+
+  transition: max-height .25s ease-in-out;
+}
+
+.toggle:checked + .tea-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* tea end */
+
+
+
+
+/* coffee */
+
+.coffeecontent {
+  width: 93%;
+	display: grid;
+	grid-template-columns: 46% 10% 10% 10%;
+  	grid-gap: 7.8% 5%;
+  flex-wrap: wrap;
   margin: 0 auto;
 }
+
+input:checked +.coffee-lbl-toggle {
+  background-size: 380px;
+  background-color: #707070;
+  background-image: url(../img/Coffee.jpg);
+  background-size: 100%;
+  background-position: 0px -167px;
+  background-repeat: no-repeat;
+  color: #707070;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.coffee-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/Coffee.jpg);
+  background-size: 100%;
+  background-position: 0px -167px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.toggle:checked + .coffee-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* coffee end */
+
+
+
+/* specials */
+
+.specialscontent {
+  width: 93%;
+	display: grid;
+	grid-template-columns: 51% 10% 10% 10%;
+  	grid-gap: 6% 4%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.specialscontent2 {
+  width: 93%;
+	display: grid;
+	grid-template-columns: 70% 10%;
+  	grid-gap: 14%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  	margin-bottom: 50px;
+}
+
+input:checked +.specials-lbl-toggle {
+  background-color: #707070;
+  background-image: url(../img/Specials2.jpg);
+  background-size: 100%;
+  background-position: 0px -80px;
+  background-repeat: no-repeat;
+  color: #707070;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.specials-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/Specials2.jpg);
+  background-size: 100%;
+  background-position: 0px -80px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.toggle:checked + .specials-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* specials end */
+
+
+
+/* sandwiches */
+
+.sandwichescontent {
+  width: 93%;
+  display: grid;
+  flex-wrap: wrap;
+  margin: 0 auto;
+	display: grid;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
+  	margin-bottom: 50px;
+}
+
+input:checked +.sandwiches-lbl-toggle {
+  background-size: 100%;
+  background-color: #707070;
+  background-image: url(../img/Sandwiches.jpg);
+  background-position: 0px -170px;
+  background-repeat: no-repeat;
+  color: #707070;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.sandwiches-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/Sandwiches.jpg);
+  background-size: 100%;
+  background-position: 0px -170px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.toggle:checked + .sandwiches-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* sandwiches end */
+
+
+
+/* muffins */
+
+.muffinscontent {
+  width: 93%;
+	display: grid;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+input:checked +.muffins-lbl-toggle {
+  background-size: 100%;
+  background-color: #707070;
+  background-image: url(../img/Muffins.jpg);
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  color: #707070;
+  box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.muffins-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/Muffins.jpg);
+  background-size: 100%;
+  background-position: 0 -300px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.toggle:checked + .muffins-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* muffins end */
+
+
+
+/* premade */
+
+.premadecontent {
+  width: 93%;
+	display: grid;
+	grid-template-columns: 60% 10%;
+  	grid-gap: 22%;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  	margin-bottom: 50px;
+}
+
+input:checked +.premade-lbl-toggle {
+  background-size: 100%;
+  background-color: #707070;
+  background-image: url(../img/PremadeFoods.jpg);
+  background-position: 0 -40px;
+  background-repeat: no-repeat;
+  color: #707070;
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.7)
+}
+
+.premade-lbl-toggle {
+  display: block;
+
+  color: #8B4513;
+  background-image: url(../img/PremadeFoods.jpg);
+  background-size: 100%;
+  background-position: 0 -40px;
+  background-repeat: no-repeat;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 150px;
+
+  cursor: pointer;
+
+  transition: all 0.25s ease-out;
+}
+
+.toggle:checked + .premade-lbl-toggle + .collapsible-content {
+  max-height: 100vh;
+}
+
+/* premade end */
+
+
+.redbox0 {
+  background-color:#FFA07A;
+  width: 100px%;
+  height:550px;
+  border: 0 auto;
+  padding: 0px;
+  margin: 0 auto;
+}
+.redbox1 {
+  background-color:#FFA07A;
+  width: 100px%;
+  height:700px;
+  border: 0 auto;
+  padding: 0px;
+  margin: 0 auto;
+}
+
+div.coffeeimage {
+  content: url(../img/charliescafelogo.png);
+  width:200px;
+  height:100px;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+p {
+   font-family: 'Noto Sans', serif;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000;
+  line-height: 15px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin: 0;
+  margin-top: 5px;
+  padding: 50px;
+}
+
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #707070;
+    margin-left: 13px;
+}
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    padding: 50px;
+
+}
+
+
+.redbox2 {
+  background-color: #FFDEAD;
+  width: 100%;
+  height:500px;
+  border: 2px solid #F0F8FF;
+  padding: 0px;
+  margin: 0 auto;
+  margin-bottom: : 300px;
+}
+
+.redbox3 {
+  background-color: #FFDEAD;
+  width: 100%;
+  height:500px;
+  border: 2px solid #F0F8FF;
+  padding: 0px;
+  margin: 0 auto;
+  margin-bottom: : 300px;
+}
+
 
 
 .box1 {
   float: left;
-  background-color: red;
-  width: 20%;
-  height:200px;
-  border: 15px solid green;
-  margin: 50px;
+  background-color: #FFE4E1;
+  width: 30%;
+  height:500px;
+  border: 2px solid #F0F8FF;
+  padding: 50px;
+  margin-right: 25px;
+  margin-left: 50px;
+
 }
+
+div.hotteaimage {
+  float: left;
+  content: url(../img/TEA.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  margin-left: 5px;
+  margin-top: 80px;
+}
+
 
 .box2 {
   float: left;
-  background-color: red;
-  width: 20%;
-  border: 15px solid green;
+  background-color: #FFE4E1;
+  width: 30%;
+  height:500px;
+  border: 2px solid #F0F8FF;
+  padding: 100px;
+  margin-right: 25px;
+}
+
+div.Coffeeimage {
+  float: left;
+  content: url(../img/Coffee.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
   padding: 50px;
-  margin-right: 20px;
+  margin-top: 80px;
 }
 
 .box3 {
   float: left;
-  background-color: red;
-  width: 20%;
-  border: 15px solid green;
+  background-color: #FFE4E1;
+  width: 30%;
+  height:500px;
+  border: 2px solid #F0F8FF;
+
+}
+div.Specialsimage {
+  content: url(../img/Specials2.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
   padding: 50px;
+  margin-right:0;
   margin-left: 10px;
+  margin-top: 80px;
 }
 
-.redbox2 {
-  background-color: red;
-  width: 90%;
-  border: 15px solid green;
-  padding: 100px;
+div.Sandwichesimage {
+  float: left;
+  content: url(../img/Sandwiches.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  margin-left: 5px;
+  margin-top: 80px;
+}
+
+div.Muffinsimage {
+  float: left;
+  content: url(../img/Muffins.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  margin-top: 80px;
+}
+
+div.PremadeFoodsimage {
+  float: left;
+  content: url(../img/PremadeFoods.jpg);
+  width: 30%;
+  height:400px;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 50px;
+  margin-right:0;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+
+
+
+
+
+  /* Food part end */
+div.coffeeimage1 {
+  content: url(../img/Facebook2.png);
+  width:150px;
+  height:150px;
+  background-repeat: no-repeat;
+  position: relative;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-left: 300px;
+  float: left;
+}
+
+div.coffeeimage2 {
+  content: url(../img/Ins2.png);
+  width:150px;
+  height:150px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 300px;
+  float: left;
+}
+
+div.coffeeimage3 {
+  content: url(../img/Wechat2.png);
+  width:150px;
+  height:150px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0 auto;
+  margin-left: 300px;
+  float: left;
 }
